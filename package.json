@@ -8,9 +8,10 @@
   "private": true,
     "scripts": {
       "dev": "tsx watch src/web/server",
-      "start": "npm run prisma:generate && tsx src/web/server",
+      "start": "npm run prisma:generate && npm run prisma:deploy && tsx src/web/server",
       "clean": "rimraf dist coverage",
-      "prisma:generate": "prisma generate"
+      "prisma:generate": "prisma generate",
+      "prisma:deploy": "prisma migrate deploy"
     },
   "dependencies": {
     "@asteasolutions/zod-to-openapi": "^7.0.0",

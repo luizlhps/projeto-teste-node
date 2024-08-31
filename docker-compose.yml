@@ -35,7 +35,7 @@ services:
     restart: unless-stopped
     env_file: ./.env
     environment:
-      DATABASE_URL: postgres://postgres:admin@postgres:5432/Test
+      DATABASE_URL: postgresql://postgres:admin@teste-postgresql:5432/Test
       GEMINI_API_KEY: ${GEMINI_API_KEY}
       PORT: ${PORT}
       HOST: localhost

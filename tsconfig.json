@@ -1,0 +1,28 @@
+{
+  "include": ["src", "tests"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@application/*": ["src/application/*"],
+      "@domain/*": ["src/domain/*"],
+      "@infrastructure/*": ["src/infrastructure/*"],
+      "@web/*": ["src/web/*"]
+    },
+    "target": "ES6",
+    "module": "commonjs",
+    "outDir": "./dist/src",
+    "typeRoots": ["./node_modules/@types", "types"],
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": false,
+    "removeComments": true,
+    "noStrictGenericChecks": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+  }
+}
